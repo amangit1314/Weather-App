@@ -1,29 +1,32 @@
-name: clima
+name: weathero
 description: A new Flutter application.
 
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.18.2 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^0.1.2
-  geolocator: ^7.0.3
+  cupertino_icons: ^1.0.5
+  font_awesome_flutter: ^10.3.0
+  google_fonts: ^3.0.1
+  geolocator: ^9.0.1
+  flutter_bloc: ^8.1.1
+  http: ^0.13.5
+  equatable: ^2.0.5
+  flare_flutter: ^3.0.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_lints: ^2.0.0
 
 flutter:
   uses-material-design: true
 
   assets:
-    - images/
-
-  fonts:
-    - family: Spartan MB
-      fonts:
-        - asset: fonts/SpartanMB-Black.otf
-          weight: 900
+    - assets/images/
+    - assets/icons/
+    - assets/weather/

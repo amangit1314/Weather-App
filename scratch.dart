@@ -17,12 +17,12 @@ void task1() {
 // ? Async Method
 Future<String> task2() async {
   Duration threeSeconds = Duration(seconds: 3);
-  String result;
+  String? result;
   await Future.delayed(threeSeconds, () {
     result = 'task 2 data';
     print('Task 2 complete');
   });
-  return result;
+  return result!;
 }
 
 void task3(String task2Data) {
